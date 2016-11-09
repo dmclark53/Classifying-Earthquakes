@@ -1,0 +1,8 @@
+# Ipython notebook
+.ipynb_checkpoints
+
+# Tensorboard directory
+tmp
+
+# Scratch file
+scratch.py
