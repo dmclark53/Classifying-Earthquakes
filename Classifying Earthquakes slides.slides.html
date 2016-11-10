@@ -11832,7 +11832,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h1><center>Classifying Earthquakes:</center></h1></p>
 <h2><center>An Introduction to Recurrent Neural Networks using TensorFlow</center></h2><h3><center>David M. Clark</center></h3>
-<h3><center>November 9th, 2016</center></h3>
+<h3><center>November 9, 2016</center></h3>
 </div>
 </div>
 </div></section></section><section><section>
@@ -11849,7 +11849,7 @@ a.anchor-link {
             <ol>
                 <li>Background: Introduction to neural networks and RNNs.</li>
                 <br><br>
-                <li>Setup TensorFlow model and train it.</li>
+                <li>Set up TensorFlow model and train it.</li>
             </ol>
         </ul>
     </div>
@@ -11868,7 +11868,7 @@ a.anchor-link {
         <ul>
             <li>A type of machine learning based on how the brain works.</li><br>
         <br>
-            <li>Input is passed through neorons, which decide how import it is related to the output.</li><br>
+            <li>Input is passed through neurons, which decide how important it is related to the output.</li><br>
         <br>
             <li>Inputs are weighted and a bias term is applied.</li><br>
         <br>
@@ -11902,7 +11902,7 @@ a.anchor-link {
             <li>Hidden layer</li>
             <ul>
                 <li>Layer of neurons between inputs and outputs.</li>
-                <li>More complex decision making ability.</li>
+                <li>More complex decision-making ability.</li>
             </ul>
             <br>
             <li>Inputs, layers of neurons, outputs &#8658; neural network.</li>
@@ -12074,10 +12074,10 @@ a.anchor-link {
 <div class="row" style="font-size: 24px">
     <div class="col-md-12">
         <ul>
-            <li>Backpropagate errors through each layer in RNN</li>
+            <li>Backpropagate errors through each layer in RNN.</li>
             <ul>
-                <li>Number of layers = number of time steps in series</li>
-                <li>Backpropagation Through Time (BPTT)</li>
+                <li>Number of layers = number of time steps in series.</li>
+                <li>Backpropagation Through Time (BPTT).</li>
             </ul>
             <br>
             <li>Challenges:</li>
@@ -12087,7 +12087,7 @@ a.anchor-link {
                     <ul>
                         <li>Slope of current gradient can directly affect slope of past gradients.</li>
                     </ul>
-                    <li>Weight updates vs. accurate gradients</li>
+                    <li>Weight updates vs. accurate gradients.</li>
                 </ul>
             <br>
             <li>Solutions:</li>
@@ -12110,7 +12110,7 @@ a.anchor-link {
 <div class="row" style="font-size: 24px">
     <div class="col-md-12">
         <dl>
-            <dt>true backpropagation:</dt>
+            <dt>True backpropagation:</dt>
         </dl>
         <center><img src="images/RNN_true_truncated_backprop.png" style="width:400px"></center>
         <br>
@@ -12164,7 +12164,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2><center>Long Short Term Memory</center></h2>
+<p><h2><center>Long Short-Term Memory</center></h2>
 <br><br></p>
 <div class="row" style="font-size: 24px">
     <div class="col-md-12">
@@ -12183,14 +12183,14 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2><center>Long Short Term Memory</center></h2>
+<p><h2><center>Long Short-Term Memory</center></h2>
 <br><br></p>
 <div class="row" style="font-size: 24px">
     <div class="col-md-6">
         <ul>
             <li>Overcoming LSTM challenges:</li><br>
             <ul>
-                <li>Forget selectively</li><br>
+                <li>Forget selectively.</li><br>
                 <li>Read selectively.</li><br>
                 <li>Write selectively.</li><br>
             </ul>
@@ -12220,9 +12220,9 @@ a.anchor-link {
 <div class="row" style="font-size: 24px">
     <div class="col-md-6">
         <ul>
-            <li>Decide what information to remove from cell state</li><br>
+            <li>Decide what information to remove from cell state.</li><br>
             <br>
-            <li>Sigmoid layer</li><br>
+            <li>Sigmoid layer.</li><br>
             <br>
         </ul>
     </div>    
@@ -12247,18 +12247,18 @@ a.anchor-link {
 <div class="row" style="font-size: 24px">
     <div class="col-md-6">
         <ul>
-            <li>Decide what information to store in cell state</li><br>
+            <li>Decide what information to store in cell state.</li><br>
             <br>
         </ul>
         <ol>
             <li>Decide what to update.</li>
             <ul>
-                <li>sigmoid layer</li><br>
+                <li>sigmoid layer.</li><br>
             </ul>
             <br>
             <li>Create candidate values for cell state.</li>
             <ul>
-                <li>tanh layer</li><br>
+                <li>tanh layer.</li><br>
             </ul>
             <br>
         </ol>
@@ -12284,7 +12284,7 @@ a.anchor-link {
 <div class="row" style="font-size: 24px">
     <div class="col-md-6">
         <ol>
-            <li>Remove what was decided to forget.</li>
+            <li>Remove forgotten information.</li>
             <ul>
                 <li>Multiply $f_t$ by old cell state.</li><br>
             </ul>
@@ -12317,15 +12317,15 @@ a.anchor-link {
 <div class="row" style="font-size: 24px">
     <div class="col-md-6">
         <ol>
-            <li>Decide what information from cell state to output</li>
+            <li>Decide what information from cell state to output.</li>
             <ul>
-                <li>sigmoid layer</li><br>
+                <li>sigmoid layer.</li><br>
             </ul>
             <br>
-            <li>Filter out only what we are interested in</li>
+            <li>Filter out pertinent information.</li>
             <ul>
-                <li>pass cell state through tanh layer</li><br>
-                <li>mulitply by sigmoid layer output</li><br>
+                <li>pass cell state through tanh layer.</li><br>
+                <li>mulitply by sigmoid layer output.</li><br>
             </ul>
         </ol>
     </div>
@@ -12352,13 +12352,13 @@ a.anchor-link {
         <ul>
             <li>Mulitiple LSTM cells can be wrapped together.</li><br>
             <ul>
-                <li>Behaves like a single LSTM cell</li><br>
-                <li>Increases model complexity</li>
+                <li>Behaves like a single LSTM cell.</li><br>
+                <li>Increases model complexity.</li>
             </ul>
         </ul>
     </div>
     <div class="col-md-6">
-        <img src="images/RNN_MultiRNNCellGrouped.png" style="width:200px">
+        <img src="images/RNN_MultiRNNCellGrouped.png" style="width:200px" align="right">
     </div>
 </div>
 <div class="row" style="font-size: 10px">
@@ -12389,7 +12389,7 @@ a.anchor-link {
         <ul>
             <li>Developed by the Google Brain Team.</li>
             <ul>
-                <li>Graph based.</li>
+                <li>Graph-based.</li>
                 <li>Nodes are operations.</li>
                 <li>Edges are multi-dimensional arrays called tensors.</li>
             </ul>
@@ -12426,7 +12426,7 @@ a.anchor-link {
         </ul>
     </div>
     <div class="col-md-6">
-        <img src="images/UCR_time_series.png" style="width:300px">
+        <img src="images/UCR_time_series.png" style="width:300px" align="right">
     </div>
 </div>
 </div>
@@ -12554,9 +12554,8 @@ memory usage: 553.2 KB
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h2><center>Data Preparation</center></h2></p>
 <h3 id="Evenly-split-labels">Evenly split labels<a class="anchor-link" href="#Evenly-split-labels">&#182;</a></h3><ul>
-<li>Uneven distribution of unique labels</li>
-<li>Bad for modeling --- can lead to bias for a specific label</li>
-<li>Resampled datasets to make even distribution of unique labels</li>
+<li>Uneven distribution of unique labels is bad for modeling and can lead to bias for a specific label.</li>
+<li>To correct this, I resampled the datasets to make an even distribution of unique labels.</li>
 </ul>
 
 </div>
@@ -12664,9 +12663,9 @@ There are 57 entries for class 0 in the test/validation set.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h2><center>Data Preparation</center></h2></p>
-<h3 id="Split-test_validation_set-into-test_set-and-validation_set">Split test_validation_set into test_set and validation_set<a class="anchor-link" href="#Split-test_validation_set-into-test_set-and-validation_set">&#182;</a></h3><ul>
-<li><strong><code>validation_set</code></strong>: evaluate model fit during training.</li>
-<li><strong><code>test_set</code></strong>: measure final model accuracy.</li>
+<h3 id="Split-test_validation_set-into-test_set-and-validation_set">Split <code>test_validation_set</code> into <code>test_set</code> and <code>validation_set</code><a class="anchor-link" href="#Split-test_validation_set-into-test_set-and-validation_set">&#182;</a></h3><ul>
+<li><strong><code>validation_set</code></strong>: used to evaluate model fit during training.</li>
+<li><strong><code>test_set</code></strong>: used to measure final model accuracy.</li>
 </ul>
 
 </div>
@@ -12743,15 +12742,16 @@ There are 57 entries for class 0 in the test/validation set.
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hyperparam_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define the hyperparameters</span>
+<span class="n">hyperparam_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
     <span class="n">number_of_classes</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">unique_training_labels_resampled</span><span class="p">),</span>
     <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
     <span class="n">back_prop_steps</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span>
-    <span class="n">lstm_layers</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="n">lstm_cell_units</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="n">lstm_layers</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="n">lstm_cell_units</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
     <span class="n">drop_out</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span>
     <span class="n">clipping_ratio</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
-    <span class="n">learning_rate</span> <span class="o">=</span> <span class="mi">6</span><span class="n">e</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">learning_rate</span> <span class="o">=</span> <span class="mi">2</span><span class="n">e</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span>
     <span class="n">training_iterations</span> <span class="o">=</span> <span class="mi">2000</span>
 <span class="p">)</span>
 </pre></div>
@@ -12907,8 +12907,8 @@ There are 57 entries for class 0 in the test/validation set.
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> <span class="n">learning_rate</span><span class="p">,</span> <span class="n">clipping_ratio</span><span class="p">):</span>
     <span class="n">training_variables</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">trainable_variables</span><span class="p">()</span>
-    <span class="n">clipped_gradients</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">clip_by_global_norm</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">gradients</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> 
-                                                               <span class="n">training_variables</span><span class="p">),</span> 
+    <span class="n">computed_gradientes</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">gradients</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> <span class="n">training_variables</span><span class="p">)</span>
+    <span class="n">clipped_gradients</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">clip_by_global_norm</span><span class="p">(</span><span class="n">computed_gradientes</span><span class="p">,</span> 
                                                   <span class="n">clipping_ratio</span><span class="p">)</span>
     <span class="n">optimizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">AdamOptimizer</span><span class="p">(</span><span class="n">learning_rate</span><span class="p">)</span>
     <span class="n">gradients</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">clipped_gradients</span><span class="p">,</span> <span class="n">training_variables</span><span class="p">))</span>
@@ -13134,8 +13134,8 @@ Now that we have defined the functions needed for the TensorFlow graph, we can c
             <span class="n">step</span> <span class="o">+=</span> <span class="mi">1</span>
 
     <span class="n">final_accuracy</span> <span class="o">=</span> <span class="n">compute_final_accuracy</span><span class="p">(</span><span class="n">test_set_resampled</span><span class="p">,</span> 
-                                            <span class="n">batch_size</span><span class="p">,</span> 
-                                            <span class="n">back_prop_steps</span><span class="p">)</span>
+                                            <span class="n">hyperparam_dict</span><span class="p">[</span><span class="s1">&#39;batch_size&#39;</span><span class="p">],</span> 
+                                            <span class="n">hyperparam_dict</span><span class="p">[</span><span class="s1">&#39;back_prop_steps&#39;</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The final accuracy is </span><span class="si">{:3f}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">final_accuracy</span><span class="p">))</span>
     
     <span class="c1"># Save hyperparameters used for model fitting</span>
@@ -13152,28 +13152,28 @@ Now that we have defined the functions needed for the TensorFlow graph, we can c
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Saving summaries to tmp/logs/run_42/
+<pre>Saving summaries to tmp/logs/run_79/
 Training set resampled every 28 steps.
-Step 0 of 2000: training cost = 0.076, validation cost = 0.101, validation accuracy = 0.086.
-Step 100 of 2000: training cost = 0.072, validation cost = 0.086, validation accuracy = 0.244.
-Step 200 of 2000: training cost = 0.071, validation cost = 0.077, validation accuracy = 0.346.
-Step 300 of 2000: training cost = 0.070, validation cost = 0.074, validation accuracy = 0.398.
-Step 400 of 2000: training cost = 0.071, validation cost = 0.069, validation accuracy = 0.510.
-Step 500 of 2000: training cost = 0.070, validation cost = 0.071, validation accuracy = 0.408.
-Step 600 of 2000: training cost = 0.070, validation cost = 0.066, validation accuracy = 0.718.
-Step 700 of 2000: training cost = 0.071, validation cost = 0.068, validation accuracy = 0.584.
-Step 800 of 2000: training cost = 0.070, validation cost = 0.070, validation accuracy = 0.512.
-Step 900 of 2000: training cost = 0.070, validation cost = 0.066, validation accuracy = 0.706.
-Step 1000 of 2000: training cost = 0.070, validation cost = 0.068, validation accuracy = 0.570.
-Step 1100 of 2000: training cost = 0.069, validation cost = 0.064, validation accuracy = 0.810.
-Step 1200 of 2000: training cost = 0.069, validation cost = 0.068, validation accuracy = 0.600.
-Step 1300 of 2000: training cost = 0.070, validation cost = 0.068, validation accuracy = 0.592.
-Step 1400 of 2000: training cost = 0.070, validation cost = 0.071, validation accuracy = 0.392.
-Step 1500 of 2000: training cost = 0.069, validation cost = 0.070, validation accuracy = 0.454.
-Step 1600 of 2000: training cost = 0.070, validation cost = 0.070, validation accuracy = 0.428.
-Step 1700 of 2000: training cost = 0.072, validation cost = 0.071, validation accuracy = 0.480.
-Step 1800 of 2000: training cost = 0.069, validation cost = 0.071, validation accuracy = 0.342.
-Step 1900 of 2000: training cost = 0.069, validation cost = 0.070, validation accuracy = 0.414.
+Step 0 of 2000: training cost = 0.070, validation cost = 0.073, validation accuracy = 0.482.
+Step 100 of 2000: training cost = 0.070, validation cost = 0.073, validation accuracy = 0.430.
+Step 200 of 2000: training cost = 0.069, validation cost = 0.074, validation accuracy = 0.444.
+Step 300 of 2000: training cost = 0.071, validation cost = 0.073, validation accuracy = 0.440.
+Step 400 of 2000: training cost = 0.071, validation cost = 0.073, validation accuracy = 0.472.
+Step 500 of 2000: training cost = 0.072, validation cost = 0.072, validation accuracy = 0.458.
+Step 600 of 2000: training cost = 0.069, validation cost = 0.072, validation accuracy = 0.464.
+Step 700 of 2000: training cost = 0.071, validation cost = 0.074, validation accuracy = 0.396.
+Step 800 of 2000: training cost = 0.070, validation cost = 0.073, validation accuracy = 0.480.
+Step 900 of 2000: training cost = 0.069, validation cost = 0.072, validation accuracy = 0.490.
+Step 1000 of 2000: training cost = 0.070, validation cost = 0.073, validation accuracy = 0.404.
+Step 1100 of 2000: training cost = 0.070, validation cost = 0.073, validation accuracy = 0.456.
+Step 1200 of 2000: training cost = 0.070, validation cost = 0.072, validation accuracy = 0.448.
+Step 1300 of 2000: training cost = 0.070, validation cost = 0.073, validation accuracy = 0.472.
+Step 1400 of 2000: training cost = 0.070, validation cost = 0.073, validation accuracy = 0.428.
+Step 1500 of 2000: training cost = 0.070, validation cost = 0.074, validation accuracy = 0.492.
+Step 1600 of 2000: training cost = 0.071, validation cost = 0.072, validation accuracy = 0.482.
+Step 1700 of 2000: training cost = 0.072, validation cost = 0.072, validation accuracy = 0.428.
+Step 1800 of 2000: training cost = 0.070, validation cost = 0.072, validation accuracy = 0.482.
+Step 1900 of 2000: training cost = 0.072, validation cost = 0.073, validation accuracy = 0.442.
 </pre>
 </div>
 </div>
@@ -13187,8 +13187,8 @@ Step 1900 of 2000: training cost = 0.069, validation cost = 0.070, validation ac
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The final accuracy is 0.434800.
-Saving hyperparameters to tmp/params/run_42/
+<pre>The final accuracy is 0.547200.
+Saving hyperparameters to tmp/params/run_79/
 </pre>
 </div>
 </div>

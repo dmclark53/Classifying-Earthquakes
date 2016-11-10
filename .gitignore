@@ -1,5 +1,6 @@
 # Ipython notebook
 .ipynb_checkpoints
+testing.ipynb
 
 # Tensorboard directory
 tmp
