@@ -1,9 +1,11 @@
 # Ipython notebook
 .ipynb_checkpoints
 testing.ipynb
+workbook.ipynb
 
 # Tensorboard directory
 tmp
+old_tmp
 
 # Scratch file
 scratch.py
