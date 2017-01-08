@@ -3,6 +3,9 @@
 testing.ipynb
 workbook.ipynb
 
+# PyCharm
+.idea
+
 # Tensorboard directory
 tmp
 old_tmp
